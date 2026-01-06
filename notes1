@@ -27,4 +27,46 @@
     dict ={"name":"john","age":36}// basically a hashmap ( key-value pair)
 12. bool = boolean data type
 13. to find out length - len()  
-14. 
+
+
+##Python-Lists
+
+1. use [] - square brackets.
+2. lists are orderable, changeable and can allow duplicates
+3. we cannot delete elements from lists.
+4. negative indexing is used in lists. 
+like thislist = ["apple","mango","cherry"]
+print(thislist[-1]) ==> it will give you cherry 
+
+5. we can also specify the range of elements while accessing the lists.
+like thislist = ["apple","mango","cherry","kiwi","banana","melon"]
+print(thislist[2:5]) ==> ["cherry","kiwi","banana"]
+remember that 5th element isn't included in this range , take it as (5-2=3 elements)
+
+6. we can also give just one element in range like-
+thislist[2:] ==> it will give elements from 2nd index to end --> ["cherry","kiwi","banana","melon"]
+thislist[:2]==> it will just give elements from 0th index to 2nd --> ["apple","mango"]
+
+7. we can also check if an element is present in a list 
+if "apple" in thislist:
+  print("yes presnt") 
+
+--> it will "yes present"
+
+8. with same range function , we can also change/alter lists elements 
+9. to add elements in list-
+   a. use append like - thislist.append("pomegrante") -- > it will add it at last
+   b. use insert for particular index insert like - thislist.insert(2, "grapes") --> it will add grapes to 2nd index
+      and will shift others to one more indexes 
+      ex- ["apple","mango","grapes","cherry","kiwi","banana","melon"]
+
+10. to add another list in existing list-
+    we will use extend keyword
+    thislist=["mango","kiwi"]
+    tropical = ["grapes","pomegranate"]
+    thislist.extends(tropical) 
+    it will give thislist with added elements of tropical at the end .
+this particular method is not only just for adding lists to lists , we can add tuple ,sets, dict anything to lists with extends.|
+
+
+
