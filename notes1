@@ -66,7 +66,14 @@ if "apple" in thislist:
     tropical = ["grapes","pomegranate"]
     thislist.extends(tropical) 
     it will give thislist with added elements of tropical at the end .
-this particular method is not only just for adding lists to lists , we can add tuple ,sets, dict anything to lists with extends.|
+this particular method is not only just for adding lists to lists , we can add tuple ,sets, dict anything to lists with extends.
 
+11. to remove elements from lists- 
+    a. remove keyword - thislist.remove("cherry") -- removes the elements
+    b . pop - thislist.pop(1) -- removes the indexed elements
+        and pop() - will delete the last element
+    c . del - del thislist[0]- deletes the indexed element
+         del thislist[] - will delete the entrie list
+    d. clear - thislist.clear()  -- > will clear the entire list and give -> [] 
 
 
