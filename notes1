@@ -76,4 +76,55 @@ this particular method is not only just for adding lists to lists , we can add t
          del thislist[] - will delete the entrie list
     d. clear - thislist.clear()  -- > will clear the entire list and give -> [] 
 
+12. imp- range() fnction
+   it basically gives you sequence of numbers starting from 0 and increasing by 1 
+  like x= range(1,6) --> starting from 1 , ending at 5
+  and x= range(3,20,2) --> starting from 3 , ending at 19 but increasing with 2 
+
+13. loop in lists
+  a. for x in thislist:
+        print(x)
+  b. for x in range(len(thislist)):
+        print(thislist[x])
+  c. [print(x) for x in thislist]
+
+14. list comprehensions ### most important
+
+  if we have to use some condition within loop , we can easily do that with one liner from lists comprehensions like -
+
+ thislist= ["apple","kiwi","cherry","mango","banana"]
+ newlist = [x for x in thislist if 'a' in x]
+ print ( newlist)
+
+ output= ["apple","mango","banana"] ---> will give all elements with a in them.
+ ## this is for showing elements 
+
+15. manipulation using lists comphresion -
+    we can also update/ manipulate lists using this syntax 
+
+   a. like if I want all values to be given in upper 
+    newlist = [x.upper() for x in thislist] 
+
+   b . if I want the output in a range with if condition 
+     newlist = x for x in range(10) if x >5 
+     output = [6,7,8,9]
+
+   c. update with anything
+    newlist = ['hiiii' for x in thislist]
+
+## the first keyword should be , what we want to return like hiiii or x.upper() and 
+what if I say I want to print orange in place of banana in thislist then-
+
+newlist= [x if x!="banana" else "orange" for x in thislist], it says - return item if it isn't banana and return orange if it is banana
+# this is for updating elements
+## also remember that 
+newlist = [x for x in fruits if x != "banana" else "orange"], won't work for above example because 
+-- if at the end of a list comprehension cannot have else
+-- if there is only for filtering, not replacing values
+
+💡 Rule to remember
+
+Filtering → for x in list if condition
+
+Replacing values → x if condition else y for x in list
 
