@@ -128,3 +128,5 @@ Filtering → for x in list if condition
 
 Replacing values → x if condition else y for x in list
 
+** best way to use big loops.
+
