@@ -130,3 +130,30 @@ Replacing values → x if condition else y for x in list
 
 ** best way to use big loops.
 
+16. Sorting list
+    list can be easily sorted with sort() method 
+      ex- thislist.sort() - it will sort the list in ascending order , 
+      if you want it in descending order then-
+      thislist.sort(reverse=true)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
