@@ -136,6 +136,9 @@ Replacing values → x if condition else y for x in list
       if you want it in descending order then-
       thislist.sort(reverse=true)
 
+17. for reversing the list , just use reverse method-
+     thislist.reverse()
+
 
 
 
