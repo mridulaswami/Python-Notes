@@ -1,0 +1,29 @@
+#python
+
+1. identation is necessary.
+2. string is reperesented as str
+3. semi-colon is optional , if-else statement is closed by :
+4. variable names are case-sensitive
+5. we can easily assign single value to multiple variables 
+    like x = y = z = "Orange"
+    x, y, z = "Orange", "Banana", "Cherry"
+6. we can print multiple strings or integer in print statement    
+   like x= "my"
+   y="name is"
+   z="mridula"
+   print(x,y,z) or print(x+y+z) = my name is mridula
+7. similarly "+" operator between integer will act as mathematical operator
+   print (5 +10) = 15
+8. but if we combine string and integer both then "+" will give error but "," will work
+   like 
+   print (5 + "john")= error
+   print (5 , "john")= 5 john   
+9. function is written as def()
+10. global() is a keyword defined for global scope
+11. dataypes to store multiple values-
+    list = ["apple","cheery","mango"]
+    tuple = ("apple","cherry","mango")
+    set = {"apple","cheery","mango"}
+    dict ={"name":"john","age":36}// basically a hashmap ( key-value pair)
+12. bool = boolean data type
+13. to find out length - len()  
