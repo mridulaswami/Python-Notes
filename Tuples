@@ -1,0 +1,14 @@
+# python-tuples 
+
+1. they are ordered, allow duplicates but are unchangeable (means we cannot add or remove items once created in tuple)
+2. they are enclosed in round brackets. ()
+3. for creating them , we must give , in statement so that compiler can know that it is a tuple and not a string
+    eg- thistuple= ("apple",) - tuple
+        thistuple= ("apple")- string
+
+4. for finding length , we use len() method ( same as lists) 
+5. they can contain any datatype items together -
+   thistuple = ("Apple",2,3.0)
+
+6 . we can create tuple using tuple() constructor
+   thistuple = tuple(("apple", "banana", "cherry"))
