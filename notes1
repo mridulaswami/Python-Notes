@@ -136,8 +136,66 @@ Replacing values → x if condition else y for x in list
       if you want it in descending order then-
       thislist.sort(reverse=true)
 
-17. for reversing the list , just use reverse method-
+    keep in mind that - elements in sorting are case-insensitive i.e. elements with upper alphabet will come first.
+   eg- 
+   thislist = ["banana", "Orange", "Kiwi", "cherry"]
+   thislist.sort()
+   print(thislist)
+
+  o/p= ['Kiwi', 'Orange', 'banana', 'cherry']
+
+ 💡💡 - we can give condition for sorting , using KEY function
+
+   thislist = ["banana", "Orange", "Kiwi", "cherry"]
+   thislist.sort(key = str.lower)
+   print(thislist)
+
+   this will give sorting on the basis of lower alphabets -
+   o/p= ['banana', 'cherry', 'Kiwi', 'Orange']
+
+17. for reversing the list orrder , just use reverse method-
      thislist.reverse()
+
+18. Copying a list 
+  we cannot directly copy list using -
+  list1= list2 because , here changes made in list2 will also be seen in list1 ( they will be refernced to each other)
+
+  hence , we will use buid-in method - copy() or list()
+  or using slice operator(:)
+
+  mylist= thislist.copy()
+  mylist= list(thislist)
+  mylist = thislist[:]
+
+19. Joining two lists- 3 methods
+    a. by using + operator
+      list1=["1","2","3"]
+      list2=[4,5,6]
+      list3= list1+list2
+
+    b. appending one by one element
+      for x in list2:
+          list1.append(x)
+
+
+    c. using extend keyword 
+      list1.extend(list2)
+
+
+
+############ IMPORTANT LIST METHODS 
+
+append()	Adds an element at the end of the list
+clear()	Removes all the elements from the list
+copy()	Returns a copy of the list
+count()	Returns the number of elements with the specified value
+extend()	Add the elements of a list (or any iterable), to the end of the current list
+index()	Returns the index of the first element with the specified value
+insert()	Adds an element at the specified position
+pop()	Removes the element at the specified position
+remove()	Removes the item with the specified value
+reverse()	Reverses the order of the list
+sort()	Sorts the list
 
 
 
