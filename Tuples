@@ -12,3 +12,64 @@
 
 6 . we can create tuple using tuple() constructor
    thistuple = tuple(("apple", "banana", "cherry"))
+
+7. access of tuples is same as lists.
+
+8. Manipulating Tuples-
+
+  a. we cannot update tuples like lists because they are immutable, but we can add elements by-
+  b. converting tuples to list and then adding them and then again changing it to tuples.
+   eg- x = ("apple", "banana", "cherry")
+        y = list(x)
+        y[1] = "kiwi"
+        x = tuple(y)
+        
+        print(x)
+     o/p= ("apple","kiwi","cherry") 
+
+   c. or using append on list and then changing it to tuples.
+   d. or add tuples to tuples. 
+    thistuple = ("apple", "banana", "cherry")
+    y = ("orange",)
+    thistuple += y
+    
+    print(thistuple)
+   o/p= ("apple", "banana", "cherry","orange")
+
+  💡💡 - basically do the lists changes by converting tuples to lists and then again to tuples.
+
+e. delete the whole tuple using del keyword
+    eg- thistuple = ("apple", "banana", "cherry")
+        del thistuple
+
+9. loops is same as lists.
+10. we can multiply tuple using * 
+   eg- fruits = ("apple", "banana", "cherry")
+        mytuple = fruits * 2
+        
+        print(mytuple)
+    o/p= ("apple", "banana", "cherry","apple", "banana", "cherry")
+
+
+
+
+####### tuple methods - 
+
+a. count() - gives the exact count of an element present in tuple 
+thistuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)
+
+x = thistuple.count(5)
+
+print(x)
+o/p= 2
+
+b . index()- gives the first index of the element. 
+
+thistuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)
+
+x = thistuple.index(8)
+
+print(x)
+
+o/p= 3 ( 8 is coming 2 times but it will give the index of first occurence of 8 i.e. index 3)
+ 
