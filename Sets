@@ -1,0 +1,58 @@
+1. items of sets are unordered, unindexed and doesn't allow duplicates.
+2. we cannot change the items of sets but we can add / remove them.
+3. we use paranthesis to represent set
+4. we can create it using set() constructor as well
+thisset = set(("apple", "banana", "cherry")) 
+
+5. we cannot access the items using indexing , rather we can access them using for loop
+thisset={"apple","cherry","mango"}
+for x in thisset:
+   print(x)
+
+6. we can also get boolean values for if in sets.
+print("banana" in thisset)
+o/p= false
+
+or 
+
+if "banana" in thisset:
+    print("true")
+
+7. adding new items in sets / adding new set into set.
+ a. using add() method 
+    eg- thisset.add("orange")
+ b.  using update() method- by this we can add new set or any other data structure like list, tuple in set
+     eg- thisset = {"apple", "banana", "cherry"}
+        tropical = {"pineapple", "mango", "papaya"}
+        
+        thisset.update(tropical)
+        
+        print(thisset)
+
+     o/p= {'apple', 'mango', 'cherry', 'pineapple', 'banana', 'papaya'}  (( un-ordered , hence we can set in any order ))
+
+   💡💡 - add any iterable
+
+      thisset = {"apple", "banana", "cherry"}
+      mylist = ["kiwi", "orange"]
+      
+      thisset.update(mylist)
+      
+      print(thisset)
+
+   o/p= {"apple","orange","cherry","kiwi","banana"}
+
+
+8. removing items ( thislist = thisset) ( used by mistake)
+ a. using remove 
+    thislist.remove("banana")  - if banana not present then it will give error
+ b. using discard
+    thislist.discard("banana")  - if banana not present then it will not give error.
+ c. using pop
+    thislist.pop() - this is ambigous because set is unordered, unindexed , so it can remove any element of any index- not preferable
+ d. using clear()- will clear the set
+    thislist.clear()
+ e. using del() - delete the whole set
+    del thislist
+
+
