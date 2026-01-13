@@ -55,4 +55,7 @@ if "banana" in thisset:
  e. using del() - delete the whole set
     del thislist
 
+9. operations on sets- 
+a. union- joining two sets into a new set.
+
 
