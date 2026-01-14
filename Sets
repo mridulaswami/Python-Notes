@@ -56,6 +56,57 @@ if "banana" in thisset:
     del thislist
 
 9. operations on sets- 
-a. union- joining two sets into a new set.
+
+   a. union- joining two sets into a new set, we can use OR (|) or that as well 
+     note that | operator only allows between sets and not any other iterables but  union keyword does.
+      eg- fruits={"apple","banana"}
+           vege = {"potato","tomato"}
+          eatables= fruits.union(vege)
+          eatables= fruits | vege
+      o/p= {"potato","apple","banana","tomato"}
+     union can be used to join all iterables like sets with lists , tuples etc.
+     ## if we want to update the existing set only , we use update instead of union
+     e.g- vege.update(fruits)
+   
+     note- that union and update will not include duplicate entries.
+
+  b. intersection- gives items that are present in both of the sets. , we can use AND (&) 
+     note that & operator only allows between sets and not any other iterables but  intersection keyword does.
+      set1 = {"apple", "banana", "cherry"}
+      set2 = {"google", "microsoft", "apple"}
+      
+      set3 = set1.intersection(set2)
+      print(set3)
+      o/p= {"apple"}
+      ## if we want to update the existing set only , we use intersection_update instead of intersection.
+      e.g- set1.intersection_update(set2)
+
+  c. difference- gives elements that are not present in other set , we can use SUBTRACT(-)
+     note that - operator only allows between sets and not any other iterables but  difference keyword does.
+     eg- 
+      set1 = {"apple", "banana", "cherry"}
+      set2 = {"google", "microsoft", "apple"}
+      
+      set3 = set1.difference(set2)
+      
+      print(set3)
+      o/p= {"banana","cherry"}
+      ## if we want to update the existing set only , we use difference_update instead of difference.
+      eg- set1.difference_update(set2)
+
+  d. symmetric_difference- gives all other items except intersection(same elements), we can use (^) operator
+     note that ^ operator only allows between sets and not any other iterables but  symmetric_difference keyword does.
+     eg- 
+      set1 = {"apple", "banana", "cherry"}
+      set2 = {"google", "microsoft", "apple"}
+      
+      set3 = set1.symmetric_difference(set2)
+      
+      print(set3)
+      o/p= {"banana","cherry","google","microsoft"}
+      ## if we want to update the existing set only , we use symmetric_difference_update instead of difference.
+      eg- set1.symmetric_difference_update(set2)
+
+
 
 
