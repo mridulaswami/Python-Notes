@@ -1,1 +1,36 @@
 1. basically a key-value pair ( usually known as hashmap in java)
+2. they are ordered, changeable and do not allow duplicates.
+3. Accessing dicts- 
+   a. eg - 
+        thisdict = {
+        "brand": "Ford",
+        "model": "Mustang",
+        "year": 1964
+      }
+      print(thisdict["brand"])
+      or we can also use get() method 
+      x= thisdict.get("model")
+
+   b. we can also find out only keys present in dict using
+      thisdict.keys()
+      and values using thisdict.values()
+   c. and to get all items , we use thisdict.items()- it will give all keys and values as tuples 
+
+4. changing values- 
+  a. updating directly-
+     thisdict["model"]="Volvo" ## this will update model to volvo
+  b. using update() keyword - 
+     thisdict.update({"model":"VOLVO"})
+  we can use the same methods to add new items in a dict as well
+
+5. Removing items -
+   a. pop()
+      thisdict.pop("model")
+   b. popitem() - will remove last inserted entry
+      thisdict.popitem()
+   c. del()
+      del thisdict["model"]
+      it can also delete the whole dict - del thisdict
+   d. clear() - will clear the dict
+      thisdict.clear()
+
