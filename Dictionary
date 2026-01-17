@@ -34,3 +34,45 @@
    d. clear() - will clear the dict
       thisdict.clear()
 
+6. Loops usgae in dict-
+   a. using normal for loop for keys-
+      for x in thisdict:
+          print(x)   
+      for x in thisdict.keys():
+          print(x)
+   b. using for loop for values- 
+      for x in thisdict:
+          print(thisdict[x]) 
+      for x in thisdict.keys():
+          print(x)
+   c. using for loop for both of the items
+      for x,y in thisdict.items():
+          print(x,y)
+
+7. copying the dicts-
+   we cannot directly copy the dicts using dict1= dict2 , because it will create reference to each other and changes made to one will be reflected in other as well.
+   so , we will use either copy() keyword or dict() constructor
+    mydict= thisdict.copy()
+    mydict = dict(thisdict)
+
+8. nested lists- 
+
+   child1= {"name":"mridula","age":24}
+   child2= {"name":"shrey","age":21}
+   child3= {"name":"utkarsh","age":25}
+
+   myfamily = {child1,child2,child3}
+
+  print(myfamily["child2"]["name"])
+
+💡💡 - think about this nested loop and understand. 
+
+    for x, obj in myfamily.items():
+        print(x)
+      
+        for y in obj:
+          print(y + ':', obj[y])
+
+
+
+
