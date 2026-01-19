@@ -1,0 +1,70 @@
+1. identation is always necessary in if-else statement.
+2. always use colon (:) 
+3. can have multiple print statement
+4. we can use boolean variables directly for conditioning
+eg- 
+if 30>20:
+    print("yes")
+    print("it is correct)
+eg- 
+login_in= "True"
+if login_in:
+    print("correct")
+
+💡💡 - python is opposite than C , here - ZERO(0), empty strings ("") and empty collections are treated as false and everything 
+else is treated as true , like 5, -6 and even false string is treated as True
+
+if "False":
+  print("Welcome back!")
+else:
+  print("no") 
+
+
+if 5:
+  print("Welcome back!")
+else:
+  print("no")  
+
+if -8:
+  print("Welcome back!")
+else:
+  print("no")  
+
+all o/p= Welcome back!
+
+5. python ELIF works on the idea of - as soon as conditions matches 
+it will check the multiple conditions and execute the exact match.
+
+age = 10
+
+if age < 13:
+  print("You are a child")
+elif age < 20:
+  print("You are a teenager")
+elif age < 65:
+  print("You are an adult")
+elif age >= 65:
+  print("You are a senior")
+
+o/p= You are a child
+
+6. shorthand if -
+we can also use one-liner if statement
+eg- 
+x=14, y=12
+max = x if x>y else y
+
+syntax-
+variable = value_if_true if condition else value_if_false
+
+7. if we don't want to put any execution for particular condition , we can use PASS with IF ( means no actio needed)
+age= 16
+if age<18:
+    PASS
+else:
+    print("acess granted")
+
+
+
+
+
