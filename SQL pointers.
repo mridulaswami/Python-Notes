@@ -1,0 +1,6 @@
+1. reading and deleting from same query doesn't work in Mysql but runs in MS SQL SERVER.
+
+delete from Person where not id in 
+(select min(id) from Person group by email)
+
+it will run in sql server but in mysql
