@@ -4,3 +4,10 @@ delete from Person where not id in
 (select min(id) from Person group by email)
 
 it will run in sql server but in mysql
+
+2. we can use order by on count and limit for getting highest count value.
+
+eg- select customer_name from Orders group by customer_number
+order by count(order_number) desc limit 1
+
+it will give customer_name who has highest orders.
