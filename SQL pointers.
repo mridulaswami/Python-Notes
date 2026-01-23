@@ -11,3 +11,10 @@ eg- select customer_name from Orders group by customer_number
 order by count(order_number) desc limit 1
 
 it will give customer_name who has highest orders.
+
+3. usage of datediff() where we have to compare current date from previous dates for some condition.
+
+eg- select a.id from Weather a join Weather b on datediff(a.recordDate,b.recordDate)=1
+where a.temperature>b.temperature
+
+here I have compared today with yesterday and provided the data if today's temperature is higher than yesterday's.
