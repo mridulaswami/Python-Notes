@@ -18,3 +18,22 @@ eg- select a.id from Weather a join Weather b on datediff(a.recordDate,b.recordD
 where a.temperature>b.temperature
 
 here I have compared today with yesterday and provided the data if today's temperature is higher than yesterday's.
+
+4. usage of IF keyword in MYSQL (more efficient)(but only for MYSQL)
+ if we want to check multiple conditions in an statement then it is better to use IF instead of CASE keyword -
+
+eg- select x,y,z,
+if(x+y > z and
+  x+z >y and
+  y+z >x , 'Yes', 'No') 
+  as triangle
+ from Triangle 
+
+here I had to find out if x,y,z can form a traingle or not , so using a case keyword may be hectic here like- 
+
+select x,y,z,
+case when x+y > z and
+  x+z >y and
+  y+z >x then 'Yes' else 'No'
+  end as triangle
+ from Triangle 
