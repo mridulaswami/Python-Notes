@@ -38,6 +38,5 @@ case when x+y > z and
   end as triangle
  from Triangle 
 
-5.
-6.
-7.
+5. better to use aggregate functions for MAX,MIN Values.
+
