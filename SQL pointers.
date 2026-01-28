@@ -120,3 +120,6 @@ select activity_date as day,count(distinct(user_id)) as active_users from Activi
 and activity_date <='2019-07-27'
 
 
+10. while using UNION or UNION ALL , keep both queries in brackets ()
+
+
