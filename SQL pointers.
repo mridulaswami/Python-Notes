@@ -12,6 +12,10 @@ order by count(order_number) desc limit 1
 
 it will give customer_name who has highest orders.
 
+💡💡💡 also always keep in mind regarding where and having clause,
+we use WHERE before group by to filter the condition from FROM statement but we use condition with HAVING clause 
+when we have to do the group by on that condition only.
+
 3. usage of datediff() where we have to compare current date from previous dates for some condition.
 
 eg- select a.id from Weather a join Weather b on datediff(a.recordDate,b.recordDate)=1
