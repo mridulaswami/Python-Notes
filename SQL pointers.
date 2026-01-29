@@ -123,3 +123,39 @@ and activity_date <='2019-07-27'
 10. while using UNION or UNION ALL , keep both queries in brackets ()
 
 
+11. for finding any Nth largest salary , it is better to use RANK than MAX , we can use MAX for first or second largest
+salary but for nth we should use dense_rank() function.
+
+a. RANK() - returns the rank and skips rank number after ties 
+eg- RAnk() over(order by scores desc) - that's how we use RANK 
+score-Rank
+100-1
+100-1
+90-3   ( 2 is skipped because 1 had ties)
+80-4
+
+b. DENSE_RANK() - returns the rank but it doesn't skip number afer ties
+eg- DENSE_RANK() over(order by scores desc)
+score-Rank
+100-1
+100-1
+90-2
+80-3
+
+c. ROW_NUMBER() - always gives a unique number to every entry, even duplicates gets unique numbers.
+eg- ROW_NUMBER() over(order by scores desc)
+score-Rank
+100-1
+100-2
+90-3 
+80-4
+
+now for finding out the nth largest salary-
+
+select salary from 
+( select salary,
+     dense_rank() over (order by salary desc) as rnk from employees)t
+where rnk=n;
+
+where n can be any number.
+
