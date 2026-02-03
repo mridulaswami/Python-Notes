@@ -1,0 +1,3 @@
+1. they returns the value for every single row, unlike aggregate functions.
+2. use of OVER() clause.
+3.
