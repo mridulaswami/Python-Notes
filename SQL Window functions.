@@ -1,3 +1,8 @@
 1. they returns the value for every single row, unlike aggregate functions.
 2. use of OVER() clause.
-3.
+3. window functions provides the output on the basis of a particular window.
+4. we can easily use window functions with aggregate functions using  partition ( basically like group by in aggregate functions)
+
+a. avg()
+if we want to find the avg grade of the student based on department , but also don't want to lose any individual rows.
+eg- 
